@@ -64,13 +64,20 @@ public class Calc
         return count;
     }
     
-    /*
+    
     public static void main(String[] args) 
     {
-        System.out.println("Hello World!");
-        System.out.println(countCharacter("fss"));
-        System.out.println(countVowels("hello"));
-        System.out.println(countNum(""));
+        Calc test = new Calc();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a string: ");
+        String userInput = input.nextLine();  
+
+        System.out.println("Number of characters (excluding spaces): " + test.countCharacter(userInput));
+        System.out.println("Number of vowels: " + test.countVowels(userInput));
+        System.out.println("Number of digits: " + test.countNum(userInput));
+
+        input.close();
+
     }
-    */
+    
 }
